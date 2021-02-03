@@ -41,5 +41,5 @@ realdata<-realdata %>% mutate_if(is.character,as.numeric)
 
 png(filename="plot2.png")
 plot(realdata$date_time, realdata$Global_active_power, type = "l", 
-     xlab = "",ylab = "Global Active Power (kilowatts")
+     xlab = "",ylab = "Global Active Power (kilowatts)")
 dev.off()
